@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Table, THead, TBody, TR, TH, TD } from "@/components/ui/table";
+import { Input } from "@/components/ui/input.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { Table, THead, TBody, TR, TH, TD } from "@/components/ui/table.tsx";
 
 export default function CatalogPage(){
   const [rows,setRows]=useState<any[]>([]);

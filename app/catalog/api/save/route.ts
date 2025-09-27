@@ -1,5 +1,5 @@
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { catalogItems } from "@modules/catalog/infrastructure/db/schema";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { catalogItems } from "@modules/catalog/infrastructure/db/schema.ts";
 import { eq } from "drizzle-orm";
 export async function POST(req: Request){
   const body = await req.json();

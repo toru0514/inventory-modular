@@ -1,8 +1,8 @@
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { workOrders, workConsume, workOutput } from "@modules/manufacturing/infrastructure/db/schema";
-import { MovementRepository } from "@modules/inventory/infrastructure/db/MovementRepository.drizzle";
-import { catalogItems } from "@modules/catalog/infrastructure/db/schema";
-import { movements } from "@modules/inventory/infrastructure/db/schema";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { workOrders, workConsume, workOutput } from "@modules/manufacturing/infrastructure/db/schema.ts";
+import { MovementRepository } from "@modules/inventory/infrastructure/db/MovementRepository.drizzle.ts";
+import { catalogItems } from "@modules/catalog/infrastructure/db/schema.ts";
+import { movements } from "@modules/inventory/infrastructure/db/schema.ts";
 import { eq, inArray } from "drizzle-orm";
 
 // 指定 item の現時点の在庫平均単価（amount合計 ÷ qty合計）を返す

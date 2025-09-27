@@ -1,5 +1,5 @@
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { movements } from "./schema";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { movements } from "./schema.ts";
 import { v4 as uuid } from "uuid";
 
 export interface NewMovement {

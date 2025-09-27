@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input.tsx";
+import { Button } from "@/components/ui/button.tsx";
 
 export default function CatalogNewPage(){
   const [form, setForm] = useState({ name:"", type:"product", uom:"pcs", defaultPrice:0, defaultCost:0 });

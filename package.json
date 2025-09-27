@@ -12,15 +12,16 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "drizzle-orm": "^0.36.3",
+    "drizzle-orm": "^0.36.4",
     "next": "^15.0.3",
-    "pg": "^8.12.0",
+    "pg": "^8.16.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.5.4",
+    "@types/pg": "^8.15.5",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",

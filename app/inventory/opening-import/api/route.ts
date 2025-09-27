@@ -1,4 +1,4 @@
-import { MovementRepository } from "@modules/inventory/infrastructure/db/MovementRepository.drizzle";
+import { MovementRepository } from "@modules/inventory/infrastructure/db/MovementRepository.drizzle.ts";
 
 export async function POST(req: Request){
   const form = await req.formData(); const file = form.get("file") as File | null;

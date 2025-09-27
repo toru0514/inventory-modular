@@ -1,4 +1,4 @@
-import { ReportMaterialYield } from "@modules/manufacturing/usecase/ReportMaterialYield";
+import { ReportMaterialYield } from "@modules/manufacturing/usecase/ReportMaterialYield.ts";
 
 export async function GET(req: Request){
   const url = new URL(req.url);

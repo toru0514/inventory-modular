@@ -1,7 +1,9 @@
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { movements } from "@modules/inventory/infrastructure/db/schema";
-import { catalogItems } from "@modules/catalog/infrastructure/db/schema";
-import { Table, THead, TBody, TR, TH, TD } from "@/components/ui/table";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { movements } from "@modules/inventory/infrastructure/db/schema.ts";
+import { catalogItems } from "@modules/catalog/infrastructure/db/schema.ts";
+import { Table, THead, TBody, TR, TH, TD } from "@/components/ui/table.tsx";
+
+export const dynamic = "force-dynamic";
 
 export default async function InventoryPage(){
   const mvs = await db.select().from(movements) as any[];

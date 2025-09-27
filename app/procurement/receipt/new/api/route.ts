@@ -1,4 +1,4 @@
-import { RecordPurchaseReceipt } from "@modules/procurement/usecase/RecordPurchaseReceipt";
+import { RecordPurchaseReceipt } from "@modules/procurement/usecase/RecordPurchaseReceipt.ts";
 
 export async function POST(req: Request){
   const body = await req.json();

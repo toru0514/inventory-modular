@@ -1,7 +1,7 @@
 import { v4 as uuid } from "uuid";
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { purchaseReceipts, purchaseLines } from "../infrastructure/db/schema";
-import { MovementRepository } from "@modules/inventory/infrastructure/db/MovementRepository.drizzle";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { purchaseReceipts, purchaseLines } from "../infrastructure/db/schema.ts";
+import { MovementRepository } from "@modules/inventory/infrastructure/db/MovementRepository.drizzle.ts";
 
 export type PurchaseLineInput = { itemId: string; qty: number; unitCost: number; note?: string };
 export class RecordPurchaseReceipt {

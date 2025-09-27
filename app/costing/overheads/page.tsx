@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input.tsx";
+import { Button } from "@/components/ui/button.tsx";
 import { v4 as uuid } from "uuid";
 
 type Row = { id: string; name: string; perUnit: number; _tmpId?: string };

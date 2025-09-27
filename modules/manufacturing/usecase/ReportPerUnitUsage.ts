@@ -1,6 +1,6 @@
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { workConsume, workOutput, workOrders } from "../infrastructure/db/schema";
-import { and, eq, gte, lte } from "drizzle-orm";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { workConsume, workOutput, workOrders } from "../infrastructure/db/schema.ts";
+import { eq } from "drizzle-orm";
 
 export class ReportPerUnitUsage {
   async exec(productId: string, from?: Date, to?: Date){
@@ -10,8 +10,8 @@ export class ReportPerUnitUsage {
     const postedSet = new Set(wos.filter(w=>w.postedAt).map(w=>w.id));
     const outsPosted = outs.filter(o=>postedSet.has(o.woId)).filter(o=>{
       if (from && new Date(o.postedAt||o.startedAt) < from) return false;
-      if (to && new Date(o.postedAt||o.startedAt) > to) return false;
-      return true;
+      return !(to && new Date(o.postedAt || o.startedAt) > to);
+
     });
 
     const woIds = new Set(outsPosted.map(o=>o.woId));

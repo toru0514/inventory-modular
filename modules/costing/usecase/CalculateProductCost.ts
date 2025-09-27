@@ -1,6 +1,6 @@
-import { db } from "@modules/shared/infrastructure/db/drizzle";
-import { overheads } from "../infrastructure/db/schema";
-import { movements } from "@modules/inventory/infrastructure/db/schema";
+import { db } from "@modules/shared/infrastructure/db/drizzle.ts";
+import { overheads } from "../infrastructure/db/schema.ts";
+import { movements } from "@modules/inventory/infrastructure/db/schema.ts";
 import { eq, and } from "drizzle-orm";
 
 export class CalculateProductCost {

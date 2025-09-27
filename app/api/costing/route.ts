@@ -1,4 +1,4 @@
-import { CalculateProductCost } from "@modules/costing/usecase/CalculateProductCost";
+import { CalculateProductCost } from "@modules/costing/usecase/CalculateProductCost.ts";
 
 export async function GET(req: Request){
   const url = new URL(req.url);

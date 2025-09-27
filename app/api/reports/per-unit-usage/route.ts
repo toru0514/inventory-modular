@@ -1,4 +1,4 @@
-import { ReportPerUnitUsage } from "@modules/manufacturing/usecase/ReportPerUnitUsage";
+import { ReportPerUnitUsage } from "@modules/manufacturing/usecase/ReportPerUnitUsage.ts";
 
 export async function GET(req: Request){
   const url = new URL(req.url);
